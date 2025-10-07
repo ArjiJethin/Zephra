@@ -111,7 +111,7 @@ class DataProvider {
       satellite: Array.from({ length: 24 }, (_, i) => ({
         timestamp: new Date(now.getTime() - (23 - i) * 60 * 60 * 1000).toISOString(),
         aerosol_optical_depth: Math.round((0.1 + Math.random() * 0.5) * 1000) / 1000,
-        cloud_fraction: Math.round(Math.random() * 100),
+        cloud_cover: Math.round(Math.random() * 100),
         surface_reflectance: Math.round((0.1 + Math.random() * 0.3) * 1000) / 1000,
         visibility: Math.round(8 + Math.random() * 7),
         uv_index: Math.round(1 + Math.random() * 10)
